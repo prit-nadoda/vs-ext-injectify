@@ -4,7 +4,6 @@ export function fileTemplates(fileName: string, entityName: string): string {
             return `import { Get, JsonController } from "routing-controllers";
 import { ${capitalize(entityName)}Service } from "./${entityName}.service";
 import Container from "typedi";
-import { IExtendedRequest } from "../../utils/common/common-types";
 
 @JsonController("/${entityName}")
 export default class ${capitalize(entityName)}Controller {
